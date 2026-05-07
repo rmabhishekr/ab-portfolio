@@ -19,25 +19,14 @@ import {
 import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 
 import PROJECT_IMG_1 from "../assets/images/project-1.png";
-import PROJECT_IMG_2 from "../assets/images/project-2.png";
-import PROJECT_IMG_3 from "../assets/images/project-3.png";
-import PROJECT_IMG_4 from "../assets/images/project-4.png";
-import PROJECT_IMG_5 from "../assets/images/project-5.png";
-import PROJECT_IMG_6 from "../assets/images/project-6.png";
-import PROJECT_IMG_7 from "../assets/images/project-7.png";
+import PROJECT_IMG_2 from "../assets/images/project-1.png";
+import PROJECT_IMG_3 from "../assets/images/project-1.png";
+import PROJECT_IMG_4 from "../assets/images/project-1.png";
+import PROJECT_IMG_5 from "../assets/images/project-1.png";
+import PROJECT_IMG_6 from "../assets/images/project-1.png";
+import PROJECT_IMG_7 from "../assets/images/project-1.png";
 
 export const SKILLS_CATEGORIES = [
-  {
-    title: "Frontend",
-    icon: Code2,
-    description: "Create beautiful and responsive user interfaces.",
-    skills: [
-      { name: "React", level: 95, color: "bg-blue-500" },
-      { name: "JavaScript", level: 90, color: "bg-blue-600" },
-      { name: "Tailwind CSS", level: 90, color: "bg-gray-800" },
-      { name: "Framer Motion", level: 85, color: "bg-pink-500" },
-    ],
-  },
   {
     title: "Backend",
     icon: Server,
@@ -45,13 +34,24 @@ export const SKILLS_CATEGORIES = [
     skills: [
       { name: "Java", level: 95, color: "bg-blue-500" },
       { name: "Spring Boot", level: 90, color: "bg-green-500" },
-      { name: "Rest APIs", level: 95, color: "bg-black-500" },
-      { name: "Hibernate/JPA", level: 95, color: "bg-gray-800" },
+      { name: "Rest APIs", level: 95, color: "bg-gray-900" },
+      { name: "Hibernate/JPA", level: 95, color: "bg-indigo-600" },
       { name: "JWT Token", level: 85, color: "bg-gray-500" },
       { name: "Python", level: 60, color: "bg-yellow-500" },
       { name: "FastAPI", level: 65, color: "bg-cyan-500" },
-      { name: "Streamlit", level: 85, color: "bg-brown-500" },
       { name: "Microservices", level: 85, color: "bg-pink-500" },
+    ],
+  },
+  {
+    title: "Frontend",
+    icon: Code2,
+    description: "Create beautiful and responsive user interfaces.",
+    skills: [
+      { name: "React", level: 95, color: "bg-blue-500" },
+      { name: "JavaScript", level: 90, color: "bg-blue-600" },
+      { name: "Tailwind CSS", level: 90, color: "bg-cyan-500" },
+      { name: "Framer Motion", level: 85, color: "bg-pink-500" },
+      { name: "Streamlit", level: 85, color: "bg-red-500" },
     ],
   },
   {
@@ -62,7 +62,7 @@ export const SKILLS_CATEGORIES = [
       { name: "MySQL", level: 95, color: "bg-blue-600" },
       { name: "MongoDB", level: 90, color: "bg-green-800" },
       { name: "PostgreSQL", level: 85, color: "bg-blue-800" },
-      { name: "Firebase", level: 85, color: "bg-orange-600" },
+      { name: "Oracle SQL", level: 85, color: "bg-red-700" },
     ],
   },
   {
@@ -76,7 +76,23 @@ export const SKILLS_CATEGORIES = [
       { name: "CI/CD", level: 80, color: "bg-purple-600" },
     ],
   },
+  {
+    title: "Tools",
+    icon: Zap,
+    description: "Development tools and IDEs for productivity.",
+    skills: [
+      { name: "VS Code", level: 95, color: "bg-blue-500" },
+      { name: "IntelliJ IDEA", level: 90, color: "bg-gray-800" },
+      { name: "Postman", level: 90, color: "bg-orange-500" },
+      { name: "GitHub", level: 95, color: "bg-gray-900" },
+      { name: "Jira", level: 85, color: "bg-blue-700" },
+      { name: "Linux", level: 80, color: "bg-yellow-600" },
+    ],
+  },
 ];
+
+export const SKILLS_CATEGORY = SKILLS_CATEGORIES;
+
 export const TECH_STACK = [
   "Java",
   "Spring-Boot",
@@ -89,6 +105,11 @@ export const TECH_STACK = [
   "Streamlit",
   "MySQL",
   "MongoDB",
+  "Oracle SQL",
+  "Docker",
+  "AWS",
+  "VS Code",
+  "GitHub",
 ];
 
 export const STATS = [
