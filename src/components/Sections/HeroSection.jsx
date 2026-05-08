@@ -85,7 +85,7 @@ const HeroSection = () => {
             }`}
           />
         </div>
-        <div className="max-w-7xl mx-auto w-full z-10 mt-20">
+        <div className="max-w-7xl mx-auto w-full z-10 mt-10">
           {/* Mobile Layout - Centered */}
           <div className="block lg:hidden">
             <motion.div
@@ -177,8 +177,8 @@ const HeroSection = () => {
                   onClick={() => scrollToSection("contact")}
                   className={`border ${
                     isDarkMode
-                      ? "borader-gray-700 hover:border-gray-600 text-gray-300"
-                      : "borader-gray-300 hover:border-gray-400 text-gray-700"
+                      ? "border-gray-700 hover:border-gray-600 text-gray-300"
+                      : "border-gray-300 hover:border-gray-400 text-gray-700"
                   } px-8 py-3 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300`}
                 >
                   Get in Touch
@@ -191,18 +191,26 @@ const HeroSection = () => {
                 className="flex justify-center space-x-6 mb-8"
               >
                 {[
-                  { icon: FiGithub, href: "#" },
-                  { icon: FiLinkedin, href: "#" },
-                  { icon: Mail, href: "#" },
+                  { icon: FiGithub, href: "https://github.com/rmabhishekr" },
+                  {
+                    icon: FiLinkedin,
+                    href: "https://www.linkedin.com/in/raiabhishekrm",
+                  },
+                  {
+                    icon: Mail,
+                    href: "https://mail.google.com/mail/?view=cm&fs=1&to=rmeer.abhi@gmail.com",
+                  },
                 ].map((social, index) => (
                   <motion.a
                     key={index}
                     href={social.href}
+                    target="_blank"
+                    rel="noreferrer"
                     whileHover={{ y: -3, scale: 1.1 }}
                     className={`p-3 rounded-full transition-colors ${
                       isDarkMode
-                        ? "Text-gray-400 hover:text-white hover:bg-gray-800"
-                        : "Text-gray-600 hover:text-gray-900 hover:bg-gray-200"
+                        ? "text-gray-400 hover:text-white hover:bg-gray-800"
+                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
                     }`}
                   >
                     <social.icon size={20} />
@@ -312,7 +320,7 @@ const HeroSection = () => {
                 <motion.button
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.98 }}
-                  onClick={() => scrollToSection("contacts")}
+                  onClick={() => scrollToSection("contact")}
                   className={`border ${
                     isDarkMode
                       ? "border-gray-700 hover:border-gray-600 text-gray-300"
@@ -329,17 +337,25 @@ const HeroSection = () => {
                 className="flex space-x-6 mb-12"
               >
                 {[
-                  { icon: FiGithub, href: "#" },
-                  { icon: FiLinkedin, href: "#" },
-                  { icon: Mail, href: "#" },
+                  { icon: FiGithub, href: "https://github.com/rmabhishekr" },
+                  {
+                    icon: FiLinkedin,
+                    href: "https://www.linkedin.com/in/raiabhishekrm",
+                  },
+                  {
+                    icon: Mail,
+                    href: "https://mail.google.com/mail/?view=cm&fs=1&to=rmeer.abhi@gmail.com",
+                  },
                 ].map((social, index) => (
                   <motion.a
                     key={index}
                     href={social.href}
+                    target="_blank"
+                    rel="noreferrer"
                     whileHover={{ y: -3, scale: 1.1 }}
                     className={`p-3 rounded-full transition-colors ${
                       isDarkMode
-                        ? "border-gray-400 hover:text-white hover:bg-gray-800"
+                        ? "text-gray-400 hover:text-white hover:bg-gray-800"
                         : "text-gray-600 hover:text-gray-900 hover:bg-gray-200"
                     }`}
                   >
@@ -354,46 +370,46 @@ const HeroSection = () => {
               initial="hidden"
               animate="visible"
               variants={imageVariants}
-              className="flex justify-center lg:justify-end"
+              className="flex justify-center"
             >
               <div className="relative">
                 {/* Tech Stack - Desktop */}
                 <motion.div
                   variants={itemVariants}
-                  className="flex items-center space-x-8 text-xs uppercase tracking-widest absolute -top-16 -left-28"
+                  className="flex items-center space-x-8 text-xs uppercase tracking-widest absolute -top-20 left-1/2 transform -translate-x-1/2 whitespace-nowrap"
                 >
                   <span
-                    className={isDarkMode ? "text-gray--600" : "text-gray-500"}
+                    className={isDarkMode ? "text-gray-600" : "text-gray-500"}
                   >
                     Java
                   </span>
                   <span
-                    className={isDarkMode ? "text-gray--700" : "text-gray-400"}
+                    className={isDarkMode ? "text-gray-700" : "text-gray-400"}
                   >
                     .
                   </span>
                   <span
-                    className={isDarkMode ? "text-gray--600" : "text-gray-500"}
+                    className={isDarkMode ? "text-gray-600" : "text-gray-500"}
                   >
                     Spring Boot
                   </span>
                   <span
-                    className={isDarkMode ? "text-gray--700" : "text-gray-400"}
+                    className={isDarkMode ? "text-gray-700" : "text-gray-400"}
                   >
                     .
                   </span>
                   <span
-                    className={isDarkMode ? "text-gray--600" : "text-gray-500"}
+                    className={isDarkMode ? "text-gray-600" : "text-gray-500"}
                   >
                     React
                   </span>
                   <span
-                    className={isDarkMode ? "text-gray--700" : "text-gray-400"}
+                    className={isDarkMode ? "text-gray-700" : "text-gray-400"}
                   >
                     .
                   </span>
                   <span
-                    className={isDarkMode ? "text-gray--600" : "text-gray-500"}
+                    className={isDarkMode ? "text-gray-600" : "text-gray-500"}
                   >
                     MongoDB
                   </span>
@@ -435,16 +451,18 @@ const HeroSection = () => {
           </div>
         </div>
         {/* Scroll Indicator */}
-        <motion.div
+        <motion.button
+          type="button"
+          onClick={() => scrollToSection("skills")}
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer p-2 z-20 text-current hover:text-blue-400 focus:outline-none"
         >
           <ArrowDown
-            size={20}
-            className={isDarkMode ? "text-gray-600" : "text-gray-400"}
+            size={24}
+            className={isDarkMode ? "text-gray-100" : "text-gray-600"}
           />
-        </motion.div>
+        </motion.button>
       </motion.section>
     </div>
   );
