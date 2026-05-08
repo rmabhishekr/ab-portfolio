@@ -165,9 +165,11 @@ const SkillsSection = () => {
                 </motion.div>
 
                 {/* Title */}
-                <h3 className={`text-xl font-medium mb-2 ${
-                  isDarkMode ? "text-white" : "text-gray-900"
-                }`}>
+                <h3
+                  className={`text-xl font-medium mb-2 ${
+                    isDarkMode ? "text-white" : "text-gray-900"
+                  }`}
+                >
                   {category.title}
                 </h3>
 

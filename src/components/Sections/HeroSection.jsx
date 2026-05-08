@@ -192,8 +192,14 @@ const HeroSection = () => {
               >
                 {[
                   { icon: FiGithub, href: "https://github.com/rmabhishekr" },
-                  { icon: FiLinkedin, href: "https://www.linkedin.com/in/raiabhishekrm" },
-                  { icon: Mail, href: "https://mail.google.com/mail/?view=cm&fs=1&to=rmeer.abhi@gmail.com" },
+                  {
+                    icon: FiLinkedin,
+                    href: "https://www.linkedin.com/in/raiabhishekrm",
+                  },
+                  {
+                    icon: Mail,
+                    href: "https://mail.google.com/mail/?view=cm&fs=1&to=rmeer.abhi@gmail.com",
+                  },
                 ].map((social, index) => (
                   <motion.a
                     key={index}
@@ -332,8 +338,14 @@ const HeroSection = () => {
               >
                 {[
                   { icon: FiGithub, href: "https://github.com/rmabhishekr" },
-                  { icon: FiLinkedin, href: "https://www.linkedin.com/in/raiabhishekrm" },
-                  { icon: Mail, href: "https://mail.google.com/mail/?view=cm&fs=1&to=rmeer.abhi@gmail.com" },
+                  {
+                    icon: FiLinkedin,
+                    href: "https://www.linkedin.com/in/raiabhishekrm",
+                  },
+                  {
+                    icon: Mail,
+                    href: "https://mail.google.com/mail/?view=cm&fs=1&to=rmeer.abhi@gmail.com",
+                  },
                 ].map((social, index) => (
                   <motion.a
                     key={index}
