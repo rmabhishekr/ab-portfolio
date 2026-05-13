@@ -114,7 +114,7 @@ export const TECH_STACK = [
 
 export const STATS = [
   { number: "50+", label: "Projects Completed" },
-  { number: "3+", label: "Years Experience" },
+  { number: "4+", label: "Years Experience" },
   { number: "20+", label: "Technologies" },
   { number: "100%", label: "Client Satisfaction" },
 ];
@@ -122,13 +122,13 @@ export const STATS = [
 export const PROJECTS = [
   {
     id: 1,
-    title: "Portfolio Website",
+    title: "Chat With CSV",
     description:
-      "A personal portfolio website to showcase my skills and projects.",
+      "A chat application that allows users to interact with CSV files.",
     image: PROJECT_IMG_1,
-    tags: ["React", "Tailwind CSS", "Framer Motion"],
+    tags: ["Python", "Streamlit", "OpenAI API"],
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/rmabhishekr/public-api-gateway-app",
     featured: false,
     category: "Web Development",
   },
@@ -173,11 +173,11 @@ export const PROJECTS = [
 export const JOURNEY_STEPS = [
   {
     year: "2019",
-    title: "Started Coding Journey",
-    company: "Self-taught",
-    description: "Began learning programming languages and web development.",
-    icon: Code2,
-    color: "bg-blue-500",
+    title: "BTech in Computer Science & Engineering",
+    company: "Babu Banarasi Das Institute of Technology",
+    description: "Graduated with a degree in Computer Science and Engineering.",
+    icon: GraduationCap,
+    color: "bg-purple-500",
   },
   {
     year: "2019",
@@ -189,11 +189,20 @@ export const JOURNEY_STEPS = [
   },
   {
     year: "2019",
-    title: "BTech in Computer Science & Engineering",
-    company: "Babu Banarasi Das Institute of Technology",
-    description: "Graduated with a degree in Computer Science and Engineering.",
-    icon: GraduationCap,
-    color: "bg-purple-500",
+    title: "Started Coding Journey",
+    company: "Self-taught",
+    description: "Began learning programming languages and web development.",
+    icon: Code2,
+    color: "bg-blue-500",
+  },
+  {
+    year: "2020",
+    title: "Test Engineer",
+    company: "Freelance",
+    description:
+      "Worked as a Test Engineer, gaining experience in software testing.",
+    icon: Briefcase,
+    color: "bg-red-500",
   },
   {
     year: "2022",
@@ -201,7 +210,7 @@ export const JOURNEY_STEPS = [
     company: "Shivila Technologies Pvt. Ltd.",
     description: "Worked as a Java Developer, focusing on backend development.",
     icon: Rocket,
-    color: "bg-Orange-500",
+    color: "bg-orange-500",
   },
   {
     year: "2023",
@@ -213,22 +222,13 @@ export const JOURNEY_STEPS = [
     color: "bg-red-500",
   },
   {
-    year: "2023",
+    year: "2023-present",
     title: "Software Engineer",
     company: "Grithika Labs India Pvt. Ltd.",
     description:
       "Currently working as a Software Engineer, focusing on full-stack development.",
     icon: Rocket,
     color: "bg-orange-500",
-  },
-  {
-    year: "2020",
-    title: "Test Engineer",
-    company: "Freelance",
-    description:
-      "Worked as a Test Engineer, gaining experience in software testing.",
-    icon: Briefcase,
-    color: "bg-red-500",
   },
 ];
 
@@ -281,7 +281,7 @@ export const CONTACT_INFO = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Bnagalore, Karnataka, India",
+    value: "Bangalore, Karnataka, India",
   },
   {
     icon: Mail,

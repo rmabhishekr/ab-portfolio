@@ -43,7 +43,7 @@ const Navbar = () => {
             <motion.button
               key={item}
               whileHover={{ y: -2 }}
-              onClick={() => scrollToSection(item.toLowerCase())}
+              onClick={() => scrollToSection(item === 'Work' ? 'projects' : item.toLowerCase())}
               className={`text-sm uppercase tracking-wider transition-colors ${
                 isDarkMode
                   ? "text-gray-400 hover:text-white"
@@ -110,7 +110,7 @@ const Navbar = () => {
               <motion.button
                 key={item}
                 whileHover={{ x: 5 }}
-                onClick={() => scrollToSection(item.toLowerCase())}
+                onClick={() => scrollToSection(item === 'Work' ? 'projects' : item.toLowerCase())}
                 className={`block w-full text-left py-2 text-sm uppercase tracking-wider transition-colors ${
                   isDarkMode
                     ? "text-gray-400 hover:text-white"
