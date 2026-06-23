@@ -44,6 +44,13 @@ const SkillsSection = () => {
     },
   };
 
+  const categorySubtitle = {
+    Backend: "SERVER . API . ARCH",
+    Frontend: "UI . UX . MOTION",
+    Database: "SQL . NOSQL . STREAM",
+    DevOps: "CLOUD . CI/CD . OPS",
+  };
+
   return (
     <section
       ref={sectionRef}
@@ -88,8 +95,11 @@ const SkillsSection = () => {
             } max-w-2xl mx-auto font-light leading-relaxed`}
           >
             Proficient in a diverse range of technologies, with deep expertise
-            in full-stack development, cloud infrastructure, and modern web
-            frameworks.
+            as a{" "}
+            <span className="font-semibold text-blue-500">
+              backend developer who can work with React when needed
+            </span>
+            , cloud infrastructure, and modern web frameworks.
           </motion.p>
         </motion.div>
 
@@ -166,12 +176,17 @@ const SkillsSection = () => {
 
                 {/* Title */}
                 <h3
-                  className={`text-xl font-medium mb-2 ${
+                  className={`text-xl font-medium mb-1 ${
                     isDarkMode ? "text-white" : "text-gray-900"
                   }`}
                 >
                   {category.title}
                 </h3>
+                <div className="mb-4">
+                  <span className="text-xs uppercase tracking-[0.24em] text-[#3B82F6]">
+                    {categorySubtitle[category.title]}
+                  </span>
+                </div>
 
                 {/* Description */}
                 <p
@@ -227,7 +242,7 @@ const SkillsSection = () => {
                           whileInView="visible"
                           viewport={{ once: true }}
                           variants={skillBarVariants}
-                          className={`h-full rounded-full ${skill.color}`}
+                          className="h-full rounded-full bg-gradient-to-r from-[#3B82F6] to-[#8B5CF6] shadow-[0_0_18px_rgba(59,130,246,0.24)]"
                         />
                       </div>
                     </motion.div>

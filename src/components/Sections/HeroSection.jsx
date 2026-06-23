@@ -3,6 +3,7 @@ import { ArrowDown, Mail } from "lucide-react";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { useTheme } from "../../context/ThemeContext";
 import PROFILE_PIC from "../../assets/images/profile-pic.png";
+import RESUME_PDF from "../../assets/docs/Resume_Rai_Abhishek_0.5.pdf";
 import { containerVariants, itemVariants } from "../../utils/helper";
 
 const HeroSection = () => {
@@ -183,6 +184,17 @@ const HeroSection = () => {
                 >
                   Get in Touch
                 </motion.button>
+                <motion.a
+                  whileHover={{ y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                  href={RESUME_PDF}
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-8 py-3 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300"
+                >
+                  Get Resume
+                </motion.a>
               </motion.div>
 
               {/* Social Link - mobile */}
@@ -256,7 +268,7 @@ const HeroSection = () => {
                 <span
                   className={isDarkMode ? "text-gray-600" : "text-gray-500"}
                 >
-                  MongoDB
+                  MySQL
                 </span>
               </motion.div>
             </motion.div>
@@ -308,7 +320,10 @@ const HeroSection = () => {
                 technologies and thoughtful user experiences.
               </motion.p>
               {/* CTA Button - Desktop */}
-              <motion.div variants={itemVariants} className="flex gap-6 mb-8">
+              <motion.div
+                variants={itemVariants}
+                className="flex flex-col sm:flex-row gap-6 mb-8"
+              >
                 <motion.button
                   whileHover={{ y: -2 }}
                   whileTap={{ scale: 0.98 }}
@@ -329,6 +344,17 @@ const HeroSection = () => {
                 >
                   Get in Touch
                 </motion.button>
+                <motion.a
+                  whileHover={{ y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                  href={RESUME_PDF}
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-8 py-4 rounded-full text-sm uppercase tracking-wider font-medium transition-all duration-300"
+                >
+                  Get Resume
+                </motion.a>
               </motion.div>
 
               {/* Social Links - Desktop */}
